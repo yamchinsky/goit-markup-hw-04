@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="page">
+    <!-- nav.container(top line) -->
+    <header class="header">
+      <div class="container">
+        <nav class="nav-container">
+          <a class="logo" href="./index.html"
+            >Web<span class="part-logo"> Studio</span>
+          </a>
+          <ul class="list">
+            <li class="list-item">
+              <a class="link link-current" href="./index.html">Студия</a>
+            </li>
+            <li class="list-item">
+              <a class="link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="list-item">
+              <a class="link" href="./blank.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- contacts list -->
+        <address class="contacts">
+          <a class="button" href="mailto:info@devstudio.com"
+            ><img class="contact-image" src="./images/envelope.svg" alt="" />
+            <span class="contact-title">info@devstudio.com</span>
+          </a>
+          <a class="button" href="tel:+380961111111">
+            <img class="contact-image" src="./images/smartphone.svg" alt="" />
+            <span class="contact-title">+38 096 111 11 11</span></a
+          >
+        </address>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="title">Эффективное решение для вашего бизнеса</h1>
+          <button class="order-service" type="button">Заказать услугу</button>
+        </div>
+      </section>
+
+      <!-- Our advantages container-->
+      <section class="advantages">
+        <div class="container">
+          <h2 class="label">Список преимуществ</h2>
+          <ul class="list">
+            <!--Advantage1-->
+            <li class="item">
+              <a href="./blank.html">
+                <img
+                  class="link-img"
+                  src="./images/antenna.svg"
+                  alt="антенна"
+                />
+              </a>
+              <h4 class="title">
+                Внимание к деталям
+              </h4>
+              <p class="paragraph-text">
+                <span>
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </span>
+              </p>
+            </li>
+            <!--Advantage2-->
+            <li class="item">
+              <a href="./blank.html">
+                <img class="link-img" src="./images/clock.svg" alt="часы" />
+              </a>
+              <h4 class="title">
+                Пунктуальность
+              </h4>
+              <p class="paragraph-text">
+                <span>
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечет за собой.
+                </span>
+              </p>
+            </li>
+
+            <!--Advantage3-->
+            <li class="item">
+              <a href="./blank.html">
+                <img
+                  class="link-img"
+                  src="./images/diagram.svg"
+                  alt="диаграмма"
+                />
+              </a>
+              <h4 class="title">
+                Планирование
+              </h4>
+              <p class="paragraph-text">
+                <span>
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </span>
+              </p>
+            </li>
+
+            <!--Advantage4-->
+            <li class="item">
+              <a href="./blank.html">
+                <img
+                  class="link-img"
+                  src="./images/astronaut.svg"
+                  alt="астронавт"
+                />
+              </a>
+              <h4 class="title">
+                Современные технологии
+              </h4>
+              <p class="paragraph-text">
+                <span>
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Our duties container-->
+      <section class="duties">
+        <div class="container">
+          <h2 class="title">Чем мы занимаемся</h2>
+          <ul class="list">
+            <!--Duty1-->
+            <li class="item">
+              <img src="./images/leptop.png" alt="ноутбук" />
+              <a href="Десктопные_приложения">
+                <h3 class="duties-title">
+                  <span class="duties-title-item">Десктопные приложения</span>
+                </h3>
+              </a>
+            </li>
+
+            <!--Duty2-->
+            <li class="item">
+              <img src="./images/smartphone.png" alt="смартфон" />
+              <a href="Мобильные_приложения">
+                <h3 class="duties-title">
+                  <span class="duties-title-item">Мобильные приложения</span>
+                </h3>
+              </a>
+            </li>
+
+            <!--Duty3-->
+            <li class="item">
+              <img src="./images/PC.png" alt="photo" />
+              <a href="Дизайнерские_решения">
+                <h3 class="duties-title">
+                  <span class="duties-title-item">Дизайнерские решения</span>
+                </h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Our team container-->
+      <section class="employees">
+        <h2 class="title">Наша команда</h2>
+        <div class="container">
+          <ul class="list">
+            <li class="item">
+              <img src="images/team-1.png" alt="photo" />
+              <p class="name">Николай Кучеренко</p>
+              <p class="description">Product Designer</p>
+              <ul class="social-link-list">
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://www.instagram.com/?hl=ru"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/inst.svg"
+                      alt="https://www.instagram.com/?hl=ru"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://twitter.com/explore"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/twitter.svg"
+                      alt="https://twitter.com/explore"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://uk-ua.facebook.com/"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/facebook.svg"
+                      alt="https://uk-ua.facebook.com/"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://www.linkedin.com/"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/linkedin.svg"
+                      alt="https://www.linkedin.com/"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+            <li class="item">
+              <img src="images/team-2.png" alt="photo" />
+              <p class="name">Ольга Иванова</p>
+              <p class="description">Frontend Developer</p>
+
+              <ul class="social-link-list">
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://www.instagram.com/?hl=ru"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/inst.svg"
+                      alt="https://www.instagram.com/?hl=ru"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://twitter.com/explore"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/twitter.svg"
+                      alt="https://twitter.com/explore"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://uk-ua.facebook.com/"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/facebook.svg"
+                      alt="https://uk-ua.facebook.com/"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://www.linkedin.com/"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/linkedin.svg"
+                      alt="https://www.linkedin.com/"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+            <li class="item">
+              <img src="images/team-3.png" alt="photo" width="270" />
+              <p class="name">Андрей Шевченко</p>
+              <p class="description">Marketing</p>
+              <ul class="social-link-list">
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://www.instagram.com/?hl=ru"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/inst.svg"
+                      alt="https://www.instagram.com/?hl=ru"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://twitter.com/explore"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/twitter.svg"
+                      alt="https://twitter.com/explore"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://uk-ua.facebook.com/"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/facebook.svg"
+                      alt="https://uk-ua.facebook.com/"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://www.linkedin.com/"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/linkedin.svg"
+                      alt="https://www.linkedin.com/"
+                  /></a>
+                </li>
+              </ul>
+            </li>
+            <li class="item">
+              <img src="images/team-4.png" alt="photo" width="270" />
+              <p class="name">Иван Николаев</p>
+              <p class="description">UI Designer</p>
+              <ul class="social-link-list">
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://www.instagram.com/?hl=ru"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/inst.svg"
+                      alt="https://www.instagram.com/?hl=ru"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://twitter.com/explore"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/twitter.svg"
+                      alt="https://twitter.com/explore"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://uk-ua.facebook.com/"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/facebook.svg"
+                      alt="https://uk-ua.facebook.com/"
+                  /></a>
+                </li>
+                <li class="social-item">
+                  <a
+                    class="link"
+                    aria-label=" https://www.linkedin.com/"
+                    href="./blank.html"
+                    ><img
+                      class="link-img"
+                      src="./images/linkedin.svg"
+                      alt="https://www.linkedin.com/"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Our customers container-->
+      <section class="customers">
+        <div class="container">
+         <h2 class="title">Постоянные клиенты</h2>
+          <ul class="customers-list">
+            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <img class="link-img" src="./images/Client 1.svg" alt="лого"> </a> </a></li>
+            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <img class="link-img"
+            src="./images/Client 2.svg" alt="лого"> </a> </a></li>
+            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <img class="link-img"
+            src="./images/Client 3.svg" alt="лого"> </a> </a></li>
+            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <img class="link-img"
+            src="./images/Client 4.svg" alt="лого"> </a> </a></li>
+            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <img class="link-img"
+            src="./images/Client 5.svg" alt="лого"> </a> </a></li>
+            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <img class="link-img"
+            src="./images/Client 6.svg" alt="лого"> </a> </a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="left-container">
+            <a class="logo" href="./index.html"
+              ><span class="part-logo">Web </span
+              ><span class="part-logo-footer">Studio</span>
+            </a>
+            <address class="contacts">
+                <p class="address"> г.Киев, пр-т Леси Украинки, 26</p>
+                <a class="link" href="mailito:info@devstudio.com">info@example.com</a>
+                <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+            </address>
+          </div>
+        </section>
+
+        <section class="join">
+          <h4 class="title">Присоединяйтесь</h4>
+          <ul class="social-link-list">
+            <li class="social-item">
+              <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><img class="link-img"
+              src="./images/inst.svg" alt="https://www.instagram.com/?hl=ru" /></a>
+            </li>
+            <li class="social-item">
+              <a class="link" aria-label=" https://twitter.com/explore" href="./blank.html"><img class="link-img"
+              src="./images/twitter.svg" alt="https://twitter.com/explore" /></a>
+            </li>
+            <li class="social-item">
+              <a class="link" aria-label=" https://uk-ua.facebook.com/" href="./blank.html"><img class="link-img"
+              src="./images/facebook.svg" alt="https://uk-ua.facebook.com/" /></a>
+            </li>
+            <li class="social-item">
+              <a class="link" aria-label=" https://www.linkedin.com/" href="./blank.html"><img class="link-img"
+              src="./images/linkedin.svg" alt="https://www.linkedin.com/" /></a>
+            </li>
+          </ul>
+        </section>
+        <div class="right-container">
+          <h4 class="title">Подпишитесь на рассылку</h4>
+          <a class="button" href="./blank.html"><span class="join-button-title">Подписаться</span></a>
+        </div>
+      </div>
+      <p class="copyrights">2020 | Developed by GoIT Students</p>
+    </footer>
+  </body>
+</html>
