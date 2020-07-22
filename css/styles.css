@@ -148,7 +148,8 @@ padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   font-style: normal;
-  margin-left: 10px;
+  margin-left: auto;
+  justify-content: center;
 }
 
 .contacts .button {
@@ -158,6 +159,18 @@ padding-bottom: 30px;
   line-height: 1.14;
   color: #757575;
   display: flex;
+}
+
+.button .icon {
+  display: inline-block;
+  margin-right: 10px;
+  background-position: center;
+  align-content: center;
+}
+
+.button .icon:hover,
+.button .icon:focus {
+  background-color: var(--accent-color);
 }
 
 .contacts .contact-image {
@@ -186,14 +199,29 @@ color: crimson
 
 /* Hero container */
 
+/* Overlay */
+
 .hero {
   color: #ffffff;
-  background-color: rgba(47, 48, 58, 0.8);
   padding-left: 15px;
   padding-right: 15px;
   min-height: 600px;
   text-align: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.overlay {
+ height: 600px;
+ max-width: 1600px;
+ margin-left: auto;
+ margin-right: auto;
+ background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header\ img.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
 
 .hero .title {
   font-weight: 900;
@@ -230,20 +258,24 @@ color: crimson
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-top: 30px;
+  text-align: left;
 }
 
 .label {
   display: none;
 }
 
-.advantages .link-img {
-  background-color: #f5f4fa;
+.advantages .icon-container {
   width: 270px;
   height: 120px;
+  background-color: #f5f4fa;
+  padding: 25px 100px;
+  border-radius: 4px;
+  margin-left: 0px;
 }
 
-.advantages .link-img:hover,
-.advantages .link-img:focus {
+.advantages .icon-container:hover,
+.advantages .icon-container:focus {
   background-color: var(--accent-color);
 }
 
@@ -258,7 +290,7 @@ color: crimson
 }
 
 .advantages .item {
-  min-width: 270px;
+  max-width: 270px;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -272,6 +304,7 @@ color: crimson
   /* or 171% */
   color: #757575;
   margin-top: 10px;
+  text-align: left;
 }
 
 /* Duties container */
@@ -444,6 +477,7 @@ margin: 0 auto;
   margin: auto;
   min-width: 175px;
   min-height: 90px;
+  outline: solid 1px #AFB1B8;
   border-radius: 4px;
 }
 .customers-list .item:not(:nth-last-child(-n + 1)) {
@@ -486,13 +520,20 @@ margin: 0 auto;
 }
 
 .hero .button {
-  display: inline-block;
+  display: inline-flex;
   border-radius: 4px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   border: none;
   outline: none;
 }
+
+  /* .contacts .button:first-child::after {
+  content: ;
+  background-image: url(../images/envelope.svg);
+  background-size: contain;
+  background-color: tomato;
+  } */
 
 .button-primary {
   display: inline-block;
@@ -547,7 +588,7 @@ div {
 .button-item .all-services {
   --h: 50px;
 /*   min-width: 200px; */
-  padding: 6px 22px; гарантия отступов при увеличении длинны текста
+  padding: 0px 22px; гарантия отступов при увеличении длинны текста
   width: 30px;
   
   height: var(--h);      /* центрирование одной линии текста по вертикали */
@@ -696,6 +737,7 @@ padding-bottom: 34px;
   margin-right: 30px;
   margin-bottom: 30px;
   overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .features-list .item:nth-last-child(-n + 3) {
@@ -774,6 +816,7 @@ padding-bottom: 34px;
 .our-team-item {
   margin-right: 30px;
   background-color: var(--primary-white-color--);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .our-team-list > li :not(:last-child)
 {
@@ -785,6 +828,10 @@ padding-bottom: 34px;
 .footer {
   text-align: center;
   background: #2f303a;
+  justify-content: space-around;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer .container {
@@ -805,7 +852,7 @@ color: var(--primary-white-color);
 
 .footer .join {
   text-align: left;
-  margin-left: 180px;
+  margin-left: 69px;
   margin-top: 10px;
 }
 
@@ -870,7 +917,7 @@ color: crimson;
   display: flex;
 }
 .right-container .title {
-  padding-bottom: 50px;
+  padding-bottom: 75px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -895,6 +942,15 @@ color: crimson;
   /* identical to box height, or 187% */
   letter-spacing: 0.06em;
 }
+
+.right-container .join-button-title::after {
+  background-image: url(../images/icon\ send.svg);
+  background-size: contain;
+  content: ;
+  width: 24px;
+  height: 24px;
+}
+
 
 .footer .copyrights {
   padding-top: 18px;

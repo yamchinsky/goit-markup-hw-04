@@ -36,24 +36,29 @@
         </nav>
         <!-- contacts list -->
         <address class="contacts">
-          <a class="button" href="mailto:info@devstudio.com"
-            ><img class="contact-image" src="./images/envelope.svg" alt="" />
-            <span class="contact-title">info@devstudio.com</span>
+          <a class="button" href="mailto:info@devstudio.com">
+            <svg class="icon" width="16" height="11.2">
+            <use href="./images/sprite.svg#icon-envelope"></use>
+            </svg>info@devstudio.com
           </a>
           <a class="button" href="tel:+380961111111">
-            <img class="contact-image" src="./images/smartphone.svg" alt="" />
-            <span class="contact-title">+38 096 111 11 11</span></a
-          >
+            <svg class="icon" width="10" height="15">
+            <use href="./images/sprite.svg#icon-smartphone"></use>
+            </svg>
+            <span class="contact-title">+38 096 111 11 11</span>
+          </a>
         </address>
       </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="container">
-          <h1 class="title">Эффективное решение для вашего бизнеса</h1>
-          <button class="order-service" type="button">Заказать услугу</button>
-        </div>
-      </section>
+      <div class="overlay">
+        <section class="hero">
+          <div class="container">
+            <h1 class="title">Эффективные решения <br> для вашего бизнеса</h1>
+            <button class="order-service" type="button">Заказать услугу</button>
+          </div>
+        </section>
+      </div>
 
       <!-- Our advantages container-->
       <section class="advantages">
@@ -62,13 +67,13 @@
           <ul class="list">
             <!--Advantage1-->
             <li class="item">
-              <a href="./blank.html">
-                <img
-                  class="link-img"
-                  src="./images/antenna.svg"
-                  alt="антенна"
-                />
-              </a>
+              <div class="icon-container">
+                <a href="./blank.html">
+                  <svg class="icon" width="70" height="70"  >
+                  <use href="./images/sprite.svg#icon-antenna"></use>
+                  </svg>
+                </a>
+              </div>
               <h4 class="title">
                 Внимание к деталям
               </h4>
@@ -81,9 +86,13 @@
             </li>
             <!--Advantage2-->
             <li class="item">
-              <a href="./blank.html">
-                <img class="link-img" src="./images/clock.svg" alt="часы" />
-              </a>
+              <div class="icon-container">
+                <a href="./blank.html">
+                 <svg class="icon" width="70" height="70">
+                  <use href="./images/sprite.svg#icon-clock"></use>
+                  </svg>
+                </a>
+              </div>
               <h4 class="title">
                 Пунктуальность
               </h4>
@@ -97,13 +106,13 @@
 
             <!--Advantage3-->
             <li class="item">
+              <div class="icon-container">
               <a href="./blank.html">
-                <img
-                  class="link-img"
-                  src="./images/diagram.svg"
-                  alt="диаграмма"
-                />
+                <svg class="icon" width="70" height="70">
+                <use href="./images/sprite.svg#icon-diagram"></use>
+                </svg>
               </a>
+              </div>
               <h4 class="title">
                 Планирование
               </h4>
@@ -117,13 +126,13 @@
 
             <!--Advantage4-->
             <li class="item">
+              <div class="icon-container">
               <a href="./blank.html">
-                <img
-                  class="link-img"
-                  src="./images/astronaut.svg"
-                  alt="астронавт"
-                />
+                <svg class="icon" width="70" height="70">
+                 <use href="./images/sprite.svg#icon-astronaut"></use>
+                </svg>
               </a>
+              </div>
               <h4 class="title">
                 Современные технологии
               </h4>
@@ -191,44 +200,40 @@
                     class="link"
                     aria-label=" https://www.instagram.com/?hl=ru"
                     href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/inst.svg"
-                      alt="https://www.instagram.com/?hl=ru"
-                  /></a>
+                    ><svg class="icon" width="44" height="44">
+                    <use href="./images/sprite.svg#icon-inst"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-item">
                   <a
                     class="link"
-                    aria-label=" https://twitter.com/explore"
+                    aria-label=" https://www.instagram.com/?hl=ru"
                     href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/twitter.svg"
-                      alt="https://twitter.com/explore"
-                  /></a>
+                    ><svg class="icon" width="44" height="44">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-item">
                   <a
                     class="link"
-                    aria-label=" https://uk-ua.facebook.com/"
+                    aria-label=" https://www.instagram.com/?hl=ru"
                     href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/facebook.svg"
-                      alt="https://uk-ua.facebook.com/"
-                  /></a>
+                    ><svg class="icon" width="44" height="44">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-item">
                   <a
                     class="link"
-                    aria-label=" https://www.linkedin.com/"
+                    aria-label=" https://www.instagram.com/?hl=ru"
                     href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/linkedin.svg"
-                      alt="https://www.linkedin.com/"
-                  /></a>
+                    ><svg class="icon" width="44" height="44">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -239,48 +244,32 @@
 
               <ul class="social-link-list">
                 <li class="social-item">
-                  <a
-                    class="link"
-                    aria-label=" https://www.instagram.com/?hl=ru"
-                    href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/inst.svg"
-                      alt="https://www.instagram.com/?hl=ru"
-                  /></a>
+                  <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                      height="44">
+                      <use href="./images/sprite.svg#icon-inst"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-item">
-                  <a
-                    class="link"
-                    aria-label=" https://twitter.com/explore"
-                    href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/twitter.svg"
-                      alt="https://twitter.com/explore"
-                  /></a>
+                  <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                      height="44">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-item">
-                  <a
-                    class="link"
-                    aria-label=" https://uk-ua.facebook.com/"
-                    href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/facebook.svg"
-                      alt="https://uk-ua.facebook.com/"
-                  /></a>
+                  <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                      height="44">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-item">
-                  <a
-                    class="link"
-                    aria-label=" https://www.linkedin.com/"
-                    href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/linkedin.svg"
-                      alt="https://www.linkedin.com/"
-                  /></a>
+                  <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                      height="44">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -290,48 +279,32 @@
               <p class="description">Marketing</p>
               <ul class="social-link-list">
                 <li class="social-item">
-                  <a
-                    class="link"
-                    aria-label=" https://www.instagram.com/?hl=ru"
-                    href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/inst.svg"
-                      alt="https://www.instagram.com/?hl=ru"
-                  /></a>
+                  <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                      height="44">
+                      <use href="./images/sprite.svg#icon-inst"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-item">
-                  <a
-                    class="link"
-                    aria-label=" https://twitter.com/explore"
-                    href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/twitter.svg"
-                      alt="https://twitter.com/explore"
-                  /></a>
+                  <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                      height="44">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-item">
-                  <a
-                    class="link"
-                    aria-label=" https://uk-ua.facebook.com/"
-                    href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/facebook.svg"
-                      alt="https://uk-ua.facebook.com/"
-                  /></a>
+                  <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                      height="44">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-item">
-                  <a
-                    class="link"
-                    aria-label=" https://www.linkedin.com/"
-                    href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/linkedin.svg"
-                      alt="https://www.linkedin.com/"
-                  /></a>
+                  <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                      height="44">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -341,48 +314,32 @@
               <p class="description">UI Designer</p>
               <ul class="social-link-list">
                 <li class="social-item">
-                  <a
-                    class="link"
-                    aria-label=" https://www.instagram.com/?hl=ru"
-                    href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/inst.svg"
-                      alt="https://www.instagram.com/?hl=ru"
-                  /></a>
+                  <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                      height="44">
+                      <use href="./images/sprite.svg#icon-inst"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-item">
-                  <a
-                    class="link"
-                    aria-label=" https://twitter.com/explore"
-                    href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/twitter.svg"
-                      alt="https://twitter.com/explore"
-                  /></a>
+                  <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                      height="44">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-item">
-                  <a
-                    class="link"
-                    aria-label=" https://uk-ua.facebook.com/"
-                    href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/facebook.svg"
-                      alt="https://uk-ua.facebook.com/"
-                  /></a>
+                  <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                      height="44">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social-item">
-                  <a
-                    class="link"
-                    aria-label=" https://www.linkedin.com/"
-                    href="./blank.html"
-                    ><img
-                      class="link-img"
-                      src="./images/linkedin.svg"
-                      alt="https://www.linkedin.com/"
-                  /></a>
+                  <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                      height="44">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -395,17 +352,29 @@
         <div class="container">
          <h2 class="title">Постоянные клиенты</h2>
           <ul class="customers-list">
-            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <img class="link-img" src="./images/Client 1.svg" alt="лого"> </a> </a></li>
-            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <img class="link-img"
-            src="./images/Client 2.svg" alt="лого"> </a> </a></li>
-            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <img class="link-img"
-            src="./images/Client 3.svg" alt="лого"> </a> </a></li>
-            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <img class="link-img"
-            src="./images/Client 4.svg" alt="лого"> </a> </a></li>
-            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <img class="link-img"
-            src="./images/Client 5.svg" alt="лого"> </a> </a></li>
-            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <img class="link-img"
-            src="./images/Client 6.svg" alt="лого"> </a> </a></li>
+            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <svg class="icon" width="170"
+            height="90">
+            <use href="./images/sprite.svg#icon-Client-1"></use></svg></a></li>
+            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <svg class="icon" width="170"
+            height="90">
+            <use href="./images/sprite.svg#icon-Client-2"></use>
+            </svg></a></li>
+            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <svg class="icon" width="170"
+            height="90">
+            <use href="./images/sprite.svg#icon-Client-3"></use>
+            </svg></a></li>
+            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <svg class="icon" width="170"
+            height="90">
+            <use href="./images/sprite.svg#icon-Client-4"></use>
+            </svg></a></li>
+            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <svg class="icon" width="170"
+            height="90">
+            <use href="./images/sprite.svg#icon-Client-5"></use>
+            </svg></a></li>
+            <li class="item"><a class="link" aria-label="лого" href="./blank.html"> <svg class="icon" width="170"
+            height="90">
+            <use href="./images/sprite.svg#icon-Client-6"></use>
+            </svg></a></li>
           </ul>
         </div>
       </section>
@@ -429,26 +398,42 @@
           <h4 class="title">Присоединяйтесь</h4>
           <ul class="social-link-list">
             <li class="social-item">
-              <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><img class="link-img"
-              src="./images/inst.svg" alt="https://www.instagram.com/?hl=ru" /></a>
+              <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                  height="44">
+                  <use href="./images/sprite.svg#icon-inst"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-item">
-              <a class="link" aria-label=" https://twitter.com/explore" href="./blank.html"><img class="link-img"
-              src="./images/twitter.svg" alt="https://twitter.com/explore" /></a>
+              <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                  height="44">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-item">
-              <a class="link" aria-label=" https://uk-ua.facebook.com/" href="./blank.html"><img class="link-img"
-              src="./images/facebook.svg" alt="https://uk-ua.facebook.com/" /></a>
+              <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                  height="44">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-item">
-              <a class="link" aria-label=" https://www.linkedin.com/" href="./blank.html"><img class="link-img"
-              src="./images/linkedin.svg" alt="https://www.linkedin.com/" /></a>
+              <a class="link" aria-label=" https://www.instagram.com/?hl=ru" href="./blank.html"><svg class="icon" width="44"
+                  height="44">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </section>
         <div class="right-container">
           <h4 class="title">Подпишитесь на рассылку</h4>
-          <a class="button" href="./blank.html"><span class="join-button-title">Подписаться</span></a>
+          <div class="button-container">
+            <a class="button" href="./blank.html">
+              <span class="join-button-title">Подписаться</span>
+            </a>
+          </div>
         </div>
       </div>
       <p class="copyrights">2020 | Developed by GoIT Students</p>
